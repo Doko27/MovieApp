@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (4.8.1)
+  - ChameleonFramework/Default (2.2.0)
+  - ChameleonFramework/Swift (2.2.0):
+    - ChameleonFramework/Default
+  - Cosmos (19.0.3)
+  - iCarousel (1.8.3)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, tag `4.8.1`)
+  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`, tag `2.2.0`)
+  - Cosmos
+  - iCarousel
+  - SDWebImage (from `https://github.com/rs/SDWebImage.git`, tag `4.4.6`)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`, tag `4.2.0`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cosmos
+    - iCarousel
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+    :tag: 4.8.1
+  ChameleonFramework:
+    :git: https://github.com/ViccAlexander/Chameleon.git
+    :tag: 2.2.0
+  SDWebImage:
+    :git: https://github.com/rs/SDWebImage.git
+    :tag: 4.4.6
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+    :tag: 4.2.0
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+    :tag: 4.8.1
+  ChameleonFramework:
+    :git: https://github.com/ViccAlexander/Chameleon.git
+    :tag: 2.2.0
+  SDWebImage:
+    :git: https://github.com/rs/SDWebImage.git
+    :tag: 4.4.6
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+    :tag: 4.2.0
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  ChameleonFramework: 2761c9d962c783c3f142050fc5b9ca5dcad9a326
+  Cosmos: a6fb17284281fa12cf4c85c2efecd440a215ec44
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  SwiftyJSON: 71665ff8783ba60f42593817d6a731d80cb0bed5
+
+PODFILE CHECKSUM: 9985f62dcb8eb4987506c9080d374924f8393a6f
+
+COCOAPODS: 1.7.2

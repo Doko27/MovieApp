@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProgressCell" rowHeight="98" id="gs7-a4-unm" customClass="ProgressCell" customModule="My_Movie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="407" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gs7-a4-unm" id="zFm-JO-xpm">
+                <rect key="frame" x="0.0" y="0.0" width="407" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHJ-kS-jyZ">
+                        <rect key="frame" x="0.0" y="0.0" width="407" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="raN-cF-72X"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4y-Yv-Joh">
+                        <rect key="frame" x="135.5" y="10" width="136" height="40"/>
+                        <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                        <state key="normal" title="Load More">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="moreAction:" destination="gs7-a4-unm" eventType="touchUpInside" id="Tvf-Mg-v0g"/>
+                        </connections>
+                    </button>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="txp-PE-8A0">
+                        <rect key="frame" x="185" y="11.5" width="37" height="37"/>
+                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </activityIndicatorView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="XHJ-kS-jyZ" firstAttribute="top" secondItem="zFm-JO-xpm" secondAttribute="top" id="0GI-wL-oOC"/>
+                    <constraint firstItem="X4y-Yv-Joh" firstAttribute="centerX" secondItem="XHJ-kS-jyZ" secondAttribute="centerX" id="370-lw-oZv"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="X4y-Yv-Joh" secondAttribute="trailing" constant="20" id="6Lx-BI-N62"/>
+                    <constraint firstItem="txp-PE-8A0" firstAttribute="centerY" secondItem="zFm-JO-xpm" secondAttribute="centerY" id="8P7-pe-C0t"/>
+                    <constraint firstItem="X4y-Yv-Joh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zFm-JO-xpm" secondAttribute="leading" constant="20" id="AgB-L2-iIO"/>
+                    <constraint firstItem="X4y-Yv-Joh" firstAttribute="top" secondItem="zFm-JO-xpm" secondAttribute="top" constant="10" id="FRN-AK-Ztt"/>
+                    <constraint firstAttribute="bottom" secondItem="XHJ-kS-jyZ" secondAttribute="bottom" id="KL7-Nh-ScQ"/>
+                    <constraint firstItem="XHJ-kS-jyZ" firstAttribute="leading" secondItem="zFm-JO-xpm" secondAttribute="leading" id="N0K-An-eRO"/>
+                    <constraint firstAttribute="trailing" secondItem="XHJ-kS-jyZ" secondAttribute="trailing" id="SQY-wy-yhH"/>
+                    <constraint firstItem="X4y-Yv-Joh" firstAttribute="width" secondItem="zFm-JO-xpm" secondAttribute="width" multiplier="1/3" id="eYp-9f-5Lo"/>
+                    <constraint firstItem="txp-PE-8A0" firstAttribute="centerX" secondItem="zFm-JO-xpm" secondAttribute="centerX" id="j0u-7E-klf"/>
+                    <constraint firstAttribute="bottom" secondItem="X4y-Yv-Joh" secondAttribute="bottom" constant="10" id="klY-A7-lBf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="loadingView" destination="txp-PE-8A0" id="OSH-1q-rGJ"/>
+                <outlet property="moreBtn" destination="X4y-Yv-Joh" id="JtM-oR-yg3"/>
+            </connections>
+            <point key="canvasLocation" x="21.014492753623191" y="150.66964285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
